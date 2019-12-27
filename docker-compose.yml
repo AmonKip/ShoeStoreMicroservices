@@ -7,7 +7,7 @@ networks:
 services:
     webmvc:
         build: 
-            context: .\src\Web\WebMvc
+            context: ./src/Web/WebMvc
             dockerfile: Dockerfile
         image: shoes/webmvc
         environment: 
@@ -27,7 +27,7 @@ services:
 
     catalog:
         build:
-            context: .\src\services\ProductCatalogApi
+            context: ./src/Services/ProductCatalogApi
             dockerfile: Dockerfile
         image: shoes/catalog
         environment: 
@@ -47,7 +47,7 @@ services:
 
     tokenserver:
         build:
-            context: .\src\Services\TokenServiceApi
+            context: ./src/Services/TokenServiceApi
             dockerfile: Dockerfile
         image: shoes/tokenservice
         environment:
